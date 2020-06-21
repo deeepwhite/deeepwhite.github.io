@@ -1,0 +1,65 @@
+#page {
+  max-width: 1000px;
+  min-height: 100vh;
+  width: 95vw;
+
+  position: relative;
+}
+
+#content {
+  padding-top: 4.8rem;
+  padding-bottom: 2rem;
+}
+
+#footer {
+  height: 1.8rem;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.text-monospace {
+  font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace;
+}
+
+.fa-icon {
+  height: 1em;
+  width: 1em;
+}
+
+.navbar-blur {
+  height: 3.6rem;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  z-index: 100;
+
+  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.navbar-blur .navbar {
+  height: 3.6rem;
+  max-width: 1000px;
+  width: 95vw;
+
+  margin: auto;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.navbar-brand {
+  display: inline-flex;
+  margin-right: 1rem;
+}
+.navbar-brand .avatar {
+  margin-right: 0.2rem;
+}
+.navbar-brand .title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: auto;
+}

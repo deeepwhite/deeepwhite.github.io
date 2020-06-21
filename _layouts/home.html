@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+{% if paginator.posts %}
+  {% for post in paginator.posts %}
+    <article>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      {{ post.exerpt }}
+    </article>
+  {% endfor %}
+
+  <ul class="pagination">
+    {% if paginator.next_page %}
+      <li class="page-item page-prev"><a href="{{ paginator.next_page_path | relative_url }}">&laquo; older</a></li>
+    {% else %}
+      <li class="page-item page-prev disabled"><a href="#">&laquo; older</a></li>
+    {% endif %}
+
+    {% if paginator.previous_page %}
+      <li class="page-item page-next"><a href="{{ paginator.previous_page_path | relative_url }}">newer &raquo;</a></li>
+    {% else %}
+      <li class="page-item page-next disabled"><a href="#">newer &raquo;</a></li>
+    {% endif %}
+  </div>
+{% else %}
+  <div class="empty">
+    <div class="empty-icon"><i class="icon icon-edit"></i></div>
+    <div class="empty-title h5">Nothing here yet&hellip;</div>
+  </div>
+{% endif %}

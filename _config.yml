@@ -1,0 +1,11 @@
+---
+title: deepwhite.cc
+description: my (rarely updated) blog
+author: deepwhite
+
+plugins:
+  - jekyll-paginate
+
+paginage: 5
+
+google_analytics: UA-67043-1

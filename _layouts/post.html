@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<h2>
+  {{ page.title }}
+</h2>
+
+<p class="text-gray">
+  by {{ page.author | default: site.author }} on {{ page.date | date: '%Y-%m-%d' }}
+</p>
+
+<article>
+  {{ content }}
+</article>
